@@ -37,25 +37,29 @@ document.body.style.backgroundRepeat = "no-repeat";
 // Home Page //
 
 document.addEventListener("DOMContentLoaded", function () {
-  const items = document.querySelectorAll(".carousel-item");
-  let currentIndex = 0;
-
-  function showItem(index) {
-    items.forEach((item) => item.classList.remove("active"));
-    items[index].classList.add("active");
-  }
-
-  document.querySelector(".next").addEventListener("click", function () {
-    currentIndex = (currentIndex + 1) % items.length;
+    const recentWorksItems = document.querySelectorAll(".highlights .carousel-item");
+    let currentIndex = 0;
+  
+    function showItem(index) {
+      recentWorksItems.forEach((item) => item.classList.remove("active"));
+      recentWorksItems[index].classList.add("active");
+    }
+  
+    document.querySelector(".highlights .next1").addEventListener("click", function () {
+      currentIndex = (currentIndex + 1) % recentWorksItems.length;
+      showItem(currentIndex);
+    });
+  
+    document.querySelector(".highlights .prev1").addEventListener("click", function () {
+      currentIndex = (currentIndex - 1 + recentWorksItems.length) % recentWorksItems.length;
+      showItem(currentIndex);
+    });
+  
+    // Initialize by showing the first item
     showItem(currentIndex);
   });
-
-  document.querySelector(".prev").addEventListener("click", function () {
-    currentIndex = (currentIndex - 1 + items.length) % items.length;
-    showItem(currentIndex);
-  });
-});
-
+  
+  
 // Audio Player //
 document.addEventListener("DOMContentLoaded", function () {
   var audioFiles = [
@@ -152,86 +156,61 @@ function createParticle(x, y) {
 
 // Web Development //
 
-function openProject(projectName) {
-  let url = "";
-
-  switch (projectName) {
-    case "project1":
-      url = "#";
-      break;
-    case "project2":
-      url = "#";
-      break;
-    case "project3":
-      url = "#";
-      break;
-    default:
-      return;
-  }
-
-  window.open(url, "_blank");
-}
-
 document.addEventListener("DOMContentLoaded", function () {
-  const carousels = document.querySelectorAll(".carousel");
-
-  carousels.forEach((carousel) => {
-    let currentIndex = 0;
-    const images = carousel.querySelectorAll("img");
-
-    images[currentIndex].classList.add("active");
-
-    setInterval(() => {
-      images[currentIndex].classList.remove("active");
-      currentIndex = (currentIndex + 1) % images.length;
+    const carousels = document.querySelectorAll(".web-dev-carousel");
+  
+    carousels.forEach((carousel) => {
+      let currentIndex = 0;
+      const images = carousel.querySelectorAll('img');
+  
       images[currentIndex].classList.add("active");
-    }, 3000);
+  
+      setInterval(() => {
+        images[currentIndex].classList.remove("active");
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add("active");
+      }, 3000);
+    });
   });
-});
-
-// Open modal with the clicked image
-let currentImageIndex = 0;
-let currentImageSet = [];
-
-
-function openModal(img) {
-    const modal = document.getElementById("imageModal");
-    const modalImage = document.getElementById("modalImage");
-    const carousel = img.parentNode; 
-    currentImageSet = Array.from(carousel.querySelectorAll('img')); 
-    currentImageIndex = currentImageSet.indexOf(img); 
-
-    modal.style.display = "block";
-    modalImage.src = img.src; 
-}
-
-// Close the modal
-function closeModal() {
-    const modal = document.getElementById("imageModal");
-    modal.style.display = "none";
-}
-
-// Function to change image in the modal
-function changeImage(direction) {
-    currentImageIndex += direction;
-
-
-    if (currentImageIndex >= currentImageSet.length) {
-        currentImageIndex = 0; 
-    } else if (currentImageIndex < 0) {
-        currentImageIndex = currentImageSet.length - 1; 
-    }
-
-    const modalImage = document.getElementById("modalImage");
-    modalImage.src = currentImageSet[currentImageIndex].src;
-}
-
-// Close modal if user clicks outside the image
-window.onclick = function(event) {
-    const modal = document.getElementById("imageModal");
-    if (event.target === modal) {
-        modal.style.display = "none";
-    }
-};
-
-
+  
+  // Modal functions
+  let currentImageIndex = 0;
+  let currentImageSet = [];
+  
+  function openModal(img) {
+      const modal = document.getElementById("imageModal");
+      const modalImage = document.getElementById("modalImage");
+      const carousel = img.parentNode; 
+      currentImageSet = Array.from(carousel.querySelectorAll('img')); 
+      currentImageIndex = currentImageSet.indexOf(img); 
+  
+      modal.style.display = "block";
+      modalImage.src = img.src; 
+  }
+  
+  function closeModal() {
+      const modal = document.getElementById("imageModal");
+      modal.style.display = "none";
+  }
+  
+  function changeImage(direction) {
+      currentImageIndex += direction;
+  
+      if (currentImageIndex >= currentImageSet.length) {
+          currentImageIndex = 0; 
+      } else if (currentImageIndex < 0) {
+          currentImageIndex = currentImageSet.length - 1; 
+      }
+  
+      const modalImage = document.getElementById("modalImage");
+      modalImage.src = currentImageSet[currentImageIndex].src;
+  }
+  
+  // Close modal if user clicks outside the image
+  window.onclick = function(event) {
+      const modal = document.getElementById("imageModal");
+      if (event.target === modal) {
+          modal.style.display = "none";
+      }
+  };
+  
