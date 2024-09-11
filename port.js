@@ -1,3 +1,4 @@
+// Navigation Bar //
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector("nav");
   const menuToggle = document.createElement("div");
@@ -11,6 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Random Image Background //
+
 const backgrounds = [
   "./images/pexels-shotbyrain-3010291.jpg",
   "./images/pexels-blooddrainer-1655901.jpg",
@@ -20,7 +23,7 @@ const backgrounds = [
   "./images/pexels-pixabay-414144.jpg",
   "./images/pexels-fariborzart-11007977.jpg",
   "./images/pexels-eva-bronzini-6072090.jpg",
-  "./images/kyfant2.jpg"
+  "./images/kyfant2.jpg",
 ];
 
 const randomIndex = Math.floor(Math.random() * backgrounds.length);
@@ -31,145 +34,157 @@ document.body.style.backgroundAttachment = "fixed";
 document.body.style.backgroundPosition = "center";
 document.body.style.backgroundRepeat = "no-repeat";
 
-document.addEventListener('DOMContentLoaded', function() {
-    const items = document.querySelectorAll(".carousel-item");
-    let currentIndex = 0;
+// Home Page //
 
-    function showItem(index) {
-        items.forEach((item) => item.classList.remove("active"));
-        items[index].classList.add("active");
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  const items = document.querySelectorAll(".carousel-item");
+  let currentIndex = 0;
 
-    document.querySelector(".next").addEventListener("click", function () {
-        currentIndex = (currentIndex + 1) % items.length;
-        showItem(currentIndex);
-    });
+  function showItem(index) {
+    items.forEach((item) => item.classList.remove("active"));
+    items[index].classList.add("active");
+  }
 
-    document.querySelector(".prev").addEventListener("click", function () {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        showItem(currentIndex);
-    });
+  document.querySelector(".next").addEventListener("click", function () {
+    currentIndex = (currentIndex + 1) % items.length;
+    showItem(currentIndex);
+  });
+
+  document.querySelector(".prev").addEventListener("click", function () {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    showItem(currentIndex);
+  });
 });
-document.addEventListener('DOMContentLoaded', function() {
-    var audioFiles = [
-        './Audio/ES_Barren Land - Farrell Wooten.mp3',
-        './Audio/ES_Chasing the Truth - Dream Cave.mp3',
-        './Audio/ES_Followers - Alec Slayne.mp3',
-        './Audio/ES_Peacekeepers - Dream Cave.mp3'
-    ];
 
- 
-    function getRandomTrackIndex() {
-        return Math.floor(Math.random() * audioFiles.length);
-    }
+// Audio Player //
+document.addEventListener("DOMContentLoaded", function () {
+  var audioFiles = [
+    "./Audio/ES_Barren Land - Farrell Wooten.mp3",
+    "./Audio/ES_Chasing the Truth - Dream Cave.mp3",
+    "./Audio/ES_Followers - Alec Slayne.mp3",
+    "./Audio/ES_Peacekeepers - Dream Cave.mp3",
+  ];
 
+  function getRandomTrackIndex() {
+    return Math.floor(Math.random() * audioFiles.length);
+  }
 
-    var currentTrackIndex = getRandomTrackIndex();
+  var currentTrackIndex = getRandomTrackIndex();
 
-    var player = new Audio(audioFiles[currentTrackIndex]);
-    player.volume = parseFloat(localStorage.getItem('currentVolume')) || 0.5;
-    document.getElementById('volumeControl').value = player.volume;
+  var player = new Audio(audioFiles[currentTrackIndex]);
+  player.volume = parseFloat(localStorage.getItem("currentVolume")) || 0.5;
+  document.getElementById("volumeControl").value = player.volume;
 
-
-    function playNext() {
-        currentTrackIndex = (currentTrackIndex + 1) % audioFiles.length;
-        player.src = audioFiles[currentTrackIndex];
-        player.play();
-        localStorage.setItem('currentTrackIndex', currentTrackIndex);
-    }
-
-
-    player.addEventListener('ended', function() {
-        playNext();
-    });
-
-
-    window.onbeforeunload = function() {
-        localStorage.setItem('currentVolume', player.volume);
-    };
-
-  
+  function playNext() {
+    currentTrackIndex = (currentTrackIndex + 1) % audioFiles.length;
+    player.src = audioFiles[currentTrackIndex];
     player.play();
+    localStorage.setItem("currentTrackIndex", currentTrackIndex);
+  }
 
-    window.togglePlay = function() {
-        if (player.paused) {
-            player.play();
-        } else {
-            player.pause();
-        }
-    };
+  player.addEventListener("ended", function () {
+    playNext();
+  });
 
- 
-    window.setVolume = function(volume) {
-        player.volume = volume;
-    };
+  window.onbeforeunload = function () {
+    localStorage.setItem("currentVolume", player.volume);
+  };
 
-  
-    window.playNext = playNext;
+  player.play();
+
+  window.togglePlay = function () {
+    if (player.paused) {
+      player.play();
+    } else {
+      player.pause();
+    }
+  };
+
+  window.setVolume = function (volume) {
+    player.volume = volume;
+  };
+
+  window.playNext = playNext;
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const magneticBtn = document.querySelector('.magnetic-btn');
-    const area = 50; 
+// Footer //
 
-    magneticBtn.addEventListener('mousemove', function(e) {
-        const rect = magneticBtn.getBoundingClientRect();
-        const x = e.clientX - (rect.left + rect.width / 2);
-        const y = e.clientY - (rect.top + rect.height / 2);
+document.addEventListener("DOMContentLoaded", function () {
+  const magneticBtn = document.querySelector(".magnetic-btn");
+  const area = 50;
 
-        if (Math.abs(x) < area && Math.abs(y) < area) {
-            magneticBtn.style.transform = `translate(${x / 5}px, ${y / 5}px)`;
-        }
-    });
+  magneticBtn.addEventListener("mousemove", function (e) {
+    const rect = magneticBtn.getBoundingClientRect();
+    const x = e.clientX - (rect.left + rect.width / 2);
+    const y = e.clientY - (rect.top + rect.height / 2);
 
-    magneticBtn.addEventListener('mouseleave', function() {
-        magneticBtn.style.transform = 'translate(0, 0)';
-    });
+    if (Math.abs(x) < area && Math.abs(y) < area) {
+      magneticBtn.style.transform = `translate(${x / 5}px, ${y / 5}px)`;
+    }
+  });
+
+  magneticBtn.addEventListener("mouseleave", function () {
+    magneticBtn.style.transform = "translate(0, 0)";
+  });
 });
 
-document.addEventListener('mousemove', function(e) {
-    createParticle(e.pageX, e.pageY);
+// Particle Effect //
+
+document.addEventListener("mousemove", function (e) {
+  createParticle(e.pageX, e.pageY);
 });
 
 function createParticle(x, y) {
+  const particle = document.createElement("div");
+  particle.classList.add("particle");
 
-    const particle = document.createElement('div');
-    particle.classList.add('particle');
-    
+  particle.style.left = `${x - 3}px`;
+  particle.style.top = `${y - 3}px`;
 
-    particle.style.left = `${x - 3}px`; 
-    particle.style.top = `${y - 3}px`; 
-    
+  document.body.appendChild(particle);
 
-    document.body.appendChild(particle);
-    
-   
-    setTimeout(() => {
-        particle.remove();
-    }, 600); 
+  setTimeout(() => {
+    particle.remove();
+  }, 600);
 }
 
 // Project Page //
 
-function openProject(projectType) {
-    let url = '';
-    
-    switch (projectType) {
-        case 'web-development':
-            url = './webdevelopment.html'; 
-            break;
-        case 'graphic-design':
-            url = './graphicdesign.html';
-            break;
-        case 'digital-art':
-            url = './digitalart.html';
-            break;
-        default:
-            return;
-    }
+// Web Development //
 
-    window.open(url, '_blank'); 
+function openProject(projectName) {
+  let url = "";
+
+  switch (projectName) {
+    case "project1":
+      url = "#";
+      break;
+    case "project2":
+      url = "#";
+      break;
+    case "project3":
+      url = "#";
+      break;
+    default:
+      return;
+  }
+
+  window.open(url, "_blank");
 }
 
+document.addEventListener("DOMContentLoaded", function () {
+  const carousels = document.querySelectorAll(".carousel");
 
+  carousels.forEach((carousel) => {
+    let currentIndex = 0;
+    const images = carousel.querySelectorAll("img");
 
+    images[currentIndex].classList.add("active");
+
+    setInterval(() => {
+      images[currentIndex].classList.remove("active");
+      currentIndex = (currentIndex + 1) % images.length;
+      images[currentIndex].classList.add("active");
+    }, 3000);
+  });
+});
