@@ -188,3 +188,50 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 3000);
   });
 });
+
+// Open modal with the clicked image
+let currentImageIndex = 0;
+let currentImageSet = [];
+
+
+function openModal(img) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    const carousel = img.parentNode; 
+    currentImageSet = Array.from(carousel.querySelectorAll('img')); 
+    currentImageIndex = currentImageSet.indexOf(img); 
+
+    modal.style.display = "block";
+    modalImage.src = img.src; 
+}
+
+// Close the modal
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+}
+
+// Function to change image in the modal
+function changeImage(direction) {
+    currentImageIndex += direction;
+
+
+    if (currentImageIndex >= currentImageSet.length) {
+        currentImageIndex = 0; 
+    } else if (currentImageIndex < 0) {
+        currentImageIndex = currentImageSet.length - 1; 
+    }
+
+    const modalImage = document.getElementById("modalImage");
+    modalImage.src = currentImageSet[currentImageIndex].src;
+}
+
+// Close modal if user clicks outside the image
+window.onclick = function(event) {
+    const modal = document.getElementById("imageModal");
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+};
+
+
