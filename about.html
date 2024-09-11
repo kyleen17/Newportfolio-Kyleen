@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kyleen Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <nav>
+        <img src="./images/Gold mystical signs moth logo for tarot.png" alt="logo">
+    
+           <!-- Audio Controls Section in Navbar -->
+           <div class="audio-player">
+            <button id="playPauseBtn" onclick="togglePlay()">
+                <img id="playPauseIcon" src="./Icons/play_pause_24dp_E8EAED_FILL0_wght400_GRAD0_opsz24.svg" alt="Play Icon">
+            </button>
+            <button onclick="playNext()">Next</button>
+            <input type="range" id="volumeControl" min="0" max="1" step="0.1" onchange="setVolume(this.value)" value="0.5">
+        </div>
+    
+        <p>Manidoo Creative Design Studio</p>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./projects.html">Projects</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+    
+     
+    </nav>
+<body>
+
+    <section class="about-page">
+        <div class="about-container">
+            <h2>Step Into My Journey</h2>
+            <img src="./images/kyfant1.jpg" alt="Kyleen Simon-Robertson's portrait" class="about-img">
+            <p>
+                Welcome, traveler. My name is Kyleen Simon-Robertson, a creator from the ancient lands of Wiikwemikoong First Nation, nestled on the ethereal shores of Manitoulin Island. Like the winds that whisper through the trees, my passion for graphic design, illustration, and web development has grown steadily, guiding me toward crafting visual and digital realms that speak to the soul.
+            </p>
+            <p>
+                My path took shape through the IndigiTech Mentorship Program, where I earned my marks in Web Development, UX Design, Business, and Digital Marketing. I further ventured into the arcane world of UI Design with Design Lab, sharpening my skills in ways that allow me to manifest captivating designs and innovative digital solutions—each one woven with intention and resonance.
+            </p>
+            <p>
+                But before I ventured into the digital arts, I honed my craft as a Sound Recording Technician, weaving soundscapes and technical mastery in Ontario’s film production realms. This chapter of my journey, alongside founding Manitoulin Music, became the fertile ground from which I launched a music theory game, designed immersive resources, published a book, and mentored students in music theory and piano. Each endeavor reflected not only my expertise in design and development but also the fire of an entrepreneurial spirit.
+            </p>
+            <p>
+                Since 2013, I have donned the mantle of an educator, crafting curricula and guiding students through the arts across Ontario. My knowledge, rooted in a Bachelor’s Degree in Music from Laurentian University and an Advanced Diploma in Music Performance from Cambrian College—both earned with honors—further solidifies my place as a guide through both musical and digital worlds.
+            </p>
+            <p>Thank you for stepping into my world. Together, let’s write the next chapter in your creative journey, where visions come to life and stories are etched into the stars.</p>
+            <button>Begin the Journey</button>
+        </div>
+    </section>
+
+    <section class="social-links">
+        <h3>Discover More</h3>
+        <div class="social-list">
+            <a href="https://www.etsy.com/shop/ManitoulinMusic?ref=search_shop_redirect" target="_blank">
+                <div class="social-item">
+                    <img src="./Icons/etsy.png" alt="Etsy Store">
+                    <p>Visit My Etsy Store</p>
+                </div>
+            </a>
+    
+            <a href="https://www.linkedin.com/in/kyleen-simon-robertson/" target="_blank">
+                <div class="social-item">
+                    <img src="./Icons/linkedin.png" alt="LinkedIn Profile">
+                    <p>Connect on LinkedIn</p>
+                </div>
+            </a>
+    
+            <a href="https://www.imdb.com/name/nm13865718/" target="_blank">
+                <div class="social-item">
+                    <img src="./Icons/imdb.png" alt="IMDb Profile">
+                    <p>View My IMDb Profile</p>
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    
+
+    </body>
+
+    <footer>
+        <div class="footer-content">
+    
+            <div class="footer-logo">
+                <a href="./index.html" class="magnetic-btn">
+                    <img src="./images/Gold mystical signs moth logo for tarot.png" alt="Manidoo Creative Designs Logo">
+                </a>
+            </div>
+    
+    
+            <div class="footer-info">
+                <h3>Manidoo Creative Designs</h3>
+                <p>Contact me: <a href="mailto:kyleen.robertson@gmail.com">kyleen.robertson@gmail.com</a></p>
+                <p>Manitoulin Island</p>
+                <p>705.822.9044</p>
+            </div>
+        </div>
+    
+    
+        <div class="geometric-shapes">
+            <div class="shape circle"></div>
+            <div class="shape square"></div>
+            <div class="shape triangle"></div>
+        </div>
+    
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Manidoo Creative Designs. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="./port.js"></script>  
+</html>
