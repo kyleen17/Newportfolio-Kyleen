@@ -34,6 +34,58 @@
     </nav>
 </head>
 <body>
+    <section class="graph-design-portfolio">
+        <h2>The Art of Visual Alchemy: Graphic Design</h2>
+        <p>Enter a world where colors, shapes, and shadows converge to tell tales of mystery and wonder. Each design is a spell, conjuring visuals that evoke emotions, stir imaginations, and craft timeless narratives. Here lies a collection of my finest works in the enchanted realm of graphic design.
+        </p>
+        
+        <div class="project-grid">
+          <!-- Project 1 -->
+          <div class="project-card-gd">
+            <div class="web-dev-carousel"> 
+              <img src="./portfolioworks/graphicdesign/1.png" alt="Project 1 Screenshot 1" onclick="openModal(this)">
+              <img src="./portfolioworks/graphicdesign/etsy2.png" alt="Project 1 Screenshot 2" onclick="openModal(this)">
+              <img src="./portfolioworks/graphicdesign/etsy3.png" alt="Project 1 Screenshot 4" onclick="openModal(this)">
+              
+            </div>
+            <h3><a href="https://www.etsy.com/ca/shop/ManitoulinMusic" target="_blank">Educational Layouts</a></h3>
+            <p>Crafting educational tools that inspire young minds, I design eye-catching music activity sheets tailored for children.  My work has engaged learners while simplifying complex concepts. I also have created vibrant posters for educators to display in classrooms, transforming learning spaces into creative, musical environments.</p>
+          </div>
+      
+          <!-- Project 2 -->
+          <div class="project-card-wd">
+            <div class="web-dev-carousel">
+              <img src="./portfolioworks/graphicdesign/booklayout.png" alt="Project 2 Screenshot 1" onclick="openModal(this)">
+              <img src="#" alt="Project 2 Screenshot 2" onclick="openModal(this)">
+              <img src="#" alt="Project 2 Screenshot 3" onclick="openModal(this)">
+              <img src="#" alt="Project 2 Screenshot 4" onclick="openModal(this)">
+            </div>
+            <h3><a href="link to website">Published Music Theory Book</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quam aliquam tempora amet sunt laudantium soluta quo tempore, dolore, dicta quia suscipit alias quidem maxime dolor incidunt veritatis perspiciatis? Molestiae.</p>
+          </div>
+      
+          <!-- Project 3 -->
+          <div class="project-card-wd">
+            <div class="web-dev-carousel">
+              <img src="./portfolioworks/webdevelopment/halloween1.png" alt="Project 3 Screenshot 1" onclick="openModal(this)">
+              <img src="#" alt="Project 3 Screenshot 2" onclick="openModal(this)">
+              <img src="#" alt="Project 3 Screenshot 3" onclick="openModal(this)">
+              <img src="#" alt="Project 3 Screenshot 4" onclick="openModal(this)">
+            </div>
+            <h3><a href="link to website">Title</a></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed nemo architecto assumenda doloremque incidunt ullam eius asperiores possimus aperiam cum mollitia voluptas iure molestiae culpa debitis, officia deserunt impedit quis!</p>
+          </div>
+        </div>
+
+      </section>
+      
+        <!-- Modal structure -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+    <a class="next" onclick="changeImage(1)">&#10095;</a>
+</div>
     
 </body>
 <footer>

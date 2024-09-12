@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
       showItem(currentIndex);
     });
   
-    // Initialize by showing the first item
+    
     showItem(currentIndex);
   });
   
@@ -154,7 +154,7 @@ function createParticle(x, y) {
 
 // Project Page //
 
-// Web Development //
+// Web Development / Graphic Design / Digital Art //
 
 document.addEventListener("DOMContentLoaded", function () {
     const carousels = document.querySelectorAll(".web-dev-carousel");
