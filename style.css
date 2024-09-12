@@ -941,6 +941,219 @@ a:hover p {
   }
 }
 
+/* //Graphic Design // */
+
+
+.graph-design-portfolio {
+  background-color: #1c1c1c;
+  color: #d3b88c;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: #1c1f24 0 0 20px;
+}
+
+.graph-design-portfolio h2 {
+  font-family: "cormorant", serif;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #d3b88c;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.graph-design-portfolio p {
+  font-size: 1.1em;
+  color: #e0c4a8;
+  line-height: 1.6;
+  font-family: "cormorant", serif;
+  padding-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px; 
+  justify-items: center;
+}
+
+.project-card-gd .web-dev-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px; 
+}
+
+.project-card-gd .web-dev-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-card-gd .web-dev-carousel img.active {
+  opacity: 1;
+}
+
+.project-card-gd h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.project-card-gd p {
+  font-size: 1.1em;
+  color: #e0c4a8;
+  line-height: 1.6;
+}
+
+.project-card-gd h3 a {
+  color: #d3b88c; 
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.project-card-gd h3 a:hover {
+  text-decoration: underline;
+}
+
+.project-card-gd h3 a:visited {
+  color: #d3b88c;
+}
+.project-card-gd {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-gd .web-dev-carousel {
+  height: 300px; 
+}
+
+/* // Digital Art // */
+
+.digital-art-portfolio {
+  background-color: #1c1c1c;
+  color: #d3b88c;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: "Crimson Text", serif;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  box-shadow: #1c1f24 0 0 20px;
+}
+
+.digital-art-portfolio h2 {
+  font-family: "cormorant", serif;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #d3b88c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.digital-art-portfolio p {
+  font-size: 1.1em;
+  color: #e0c4a8;
+  line-height: 1.6;
+  font-family: "cormorant", serif;
+  padding-bottom: 20px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 50px; 
+  justify-items: center;
+}
+
+.project-card-da .web-dev-carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 8px; 
+}
+
+.project-card-da .web-dev-carousel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  border-radius: 8px; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.project-card-da .web-dev-carousel img.active {
+  opacity: 1;
+}
+
+.project-card-da h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  font-family: "Playfair Display", serif;
+}
+
+.project-card-da p {
+  font-size: 1.1em;
+  color: #e0c4a8;
+  line-height: 1.6;
+}
+
+.project-card-da h3 a {
+  color: #d3b88c; 
+  text-decoration: none;
+  transition: text-decoration 0.3s ease;
+}
+
+.project-card-da h3 a:hover {
+  text-decoration: underline;
+}
+
+.project-card-da h3 a:visited {
+  color: #d3b88c;
+}
+.project-card-da {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+  min-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-card-da .web-dev-carousel {
+  height: 300px; 
+}
+
 
 /* // footer // */
 footer {
