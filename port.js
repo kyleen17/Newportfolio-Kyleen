@@ -218,3 +218,12 @@ window.onclick = function (event) {
     modal.style.display = "none";
   }
 };
+
+// Services Page //
+
+document.addEventListener("DOMContentLoaded", function () {
+    const contactButton = document.querySelector(".contact-button");
+    contactButton.addEventListener("click", function () {
+        window.location.href = "contact.html"; 
+    });
+});
