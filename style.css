@@ -1164,6 +1164,126 @@ a:hover p {
   height: 300px;
 }
 
+/* // Services Page // */
+
+.services-intro {
+  background-color: #282c34d0;
+  padding: 60px 20px;
+  margin-bottom: 50px;
+  border: 2px solid #503746;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.services-intro h2 {
+  font-family: 'Cormorant', serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #d3b88c;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.services-intro p {
+  font-size: 1.2em;
+  color: #e0c4a8;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-items: center;
+  margin: 0 5%;
+  padding-bottom: 50px;
+}
+
+.service-item {
+  background-color: #333333f6;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  border: 2px solid #503746;
+}
+
+.service-item h3 {
+  font-size: 1.5em;
+  margin: 15px 0;
+  font-family: "Cormorant", serif;
+  color: #d3b88c;
+}
+
+.service-item p {
+  font-family: "Cormorant", serif;
+  font-size: 1em;
+  color: #e0c4a8;
+  line-height: 1.6;
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.price {
+  display: block;
+  font-size: 1.5em;
+  color: #d3b88c;
+  margin-top: 20px;
+}
+
+.full-package {
+  background-color: #282c34;
+  padding: 50px 20px;
+  text-align: center;
+  border: 2px solid #503746;
+  margin: 50px auto;
+  max-width: 800px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+.full-package h2 { 
+  font-family: 'Cormorant', serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #d3b88c;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.full-package p {
+  margin: 20px 0;
+}
+
+.contact-button {
+  background-color: #64485c;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+  background-color: #503746;
+  transform: translateY(-3px);
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .services-list {
+      grid-template-columns: 1fr;
+  }
+}
+
 /* // footer // */
 footer {
   background-color: #282c34;
