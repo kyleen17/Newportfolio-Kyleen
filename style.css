@@ -288,10 +288,33 @@ nav ul li a {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+.about button a {
+  color: white; 
+  text-decoration: none; 
+}
+
+.about button:visited a {
+  color: white; 
+}
+
+.about button:active {
+  background-color: #503746; 
+  transform: translateY(0); 
+}
+
+.about button a:visited {
+  color: white; 
+}
+
 .about button:hover {
   background-color: #503746;
   transform: translateY(-3px);
 }
+
+.about button:hover a {
+  color: white; 
+}
+
 
 @media (max-width: 768px) {
   .about {
@@ -327,53 +350,7 @@ nav ul li a {
   color: #d3b88c;
 }
 
-/* Recent Works Carousel */
-.carousel {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  position: relative;
-}
 
-.carousel-item {
-  flex: 0 0 100%;
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-  position: relative;
-  display: none;
-}
-
-.carousel-item.active {
-  opacity: 1;
-  display: block;
-}
-
-.carousel img {
-  width: 60%;
-  height: auto;
-}
-
-.highlights-controls {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-button.prev1,
-button.next1 {
-  background-color: #64485c;
-  color: #ffffff;
-  border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  font-size: 1em;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #503746;
-}
 
 /* Recent Works Carousel */
 .carousel {
@@ -388,12 +365,12 @@ button:hover {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   position: relative;
-  display: none; /* Initially hide all images */
+  display: none; 
 }
 
 .carousel-item.active {
   opacity: 1;
-  display: block; /* Only display the active image */
+  display: block; 
 }
 
 .carousel img {
@@ -434,6 +411,10 @@ button.next1 {
   cursor: pointer;
   font-size: 1em;
   border-radius: 5px;
+}
+
+.highlights button a:visited {
+  color: white; 
 }
 
 button:hover {
@@ -512,6 +493,9 @@ button:hover {
 .serviceshome button:hover {
   background-color: #503746;
 }
+.serviceshome button a:visited {
+  color: white; 
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -528,7 +512,7 @@ button:hover {
 
 /* // ABOUT - PAGE // */
 .about-page {
-  background: none; /* Keep the main background transparent to allow cycling images to show */
+  background: none; 
   color: #d3b88c;
   padding: 80px 20px;
   text-align: center;
@@ -543,10 +527,10 @@ button:hover {
     28,
     28,
     0.8
-  ); /* Semi-transparent dark background */
+  ); 
   border: 2px solid #503746;
   border-radius: 10px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8); /* Soft shadow for depth */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
 }
 
 .about-container h2 {
@@ -598,6 +582,10 @@ button {
 button:hover {
   background-color: #503746;
   transform: translateY(-3px);
+}
+
+button a:visited {
+  color: white;
 }
 
 .social-links {
@@ -675,6 +663,108 @@ a:hover p {
     max-width: 300px;
   }
 }
+
+/* Resume Section */
+.resume-section {
+  background-color: #1c1f24;
+  color: #d3b88c;
+  text-align: center;
+  padding: 50px 20px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+}
+
+.resume-section h3 {
+  font-size: 2em;
+  font-family: 'cormorant', serif;
+}
+
+.resume-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  color: #e0c4a8;
+}
+
+.resume-section button {
+  background-color: #64485c;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.1em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.resume-section button:hover {
+  background-color: #503746;
+  transform: translateY(-3px);
+}
+
+/* Modal */
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); 
+}
+
+.modal-content {
+  background-color: #282c34;
+  color: #d3b88c;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content h4 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.modal-content iframe {
+  border: none;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #d3b88c;
+}
+
+.download-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #64485c;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.download-btn:hover {
+  background-color: #503746;
+}
+
 
 /* // Projects // */
 
