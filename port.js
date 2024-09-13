@@ -20,7 +20,6 @@ const backgrounds = [
   "./images/pexels-daniel-maldonado-1864828-4119179.jpg",
   "./images/pexels-francesco-ungaro-1671325.jpg",
   "./images/pexels-vincent-ma-janssen-2302802.jpg",
-  "./images/pexels-pixabay-414144.jpg",
   "./images/pexels-fariborzart-11007977.jpg",
   "./images/pexels-eva-bronzini-6072090.jpg",
   "./images/kyfant2.jpg",
@@ -227,3 +226,16 @@ document.addEventListener("DOMContentLoaded", function () {
         window.location.href = "contact.html"; 
     });
 });
+
+// Contact Page //
+
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault();
+        
+        alert("Your message has been sent. Thank you for reaching out!");
+        form.reset(); 
+    });
+});
+
