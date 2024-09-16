@@ -264,6 +264,16 @@ form.addEventListener('submit', function (event) {
   form.reset(); 
 });
 
+document.querySelectorAll('.info-item').forEach(function(item) {
+  item.addEventListener('mouseenter', function() {
+    item.style.boxShadow = '0 0 30px #d3b88c, 0 0 50px #503746';
+  });
+
+  item.addEventListener('mouseleave', function() {
+    item.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.5)';
+  });
+});
+
 
 
 
