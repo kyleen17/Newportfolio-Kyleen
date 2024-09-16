@@ -796,8 +796,7 @@ min-height: 230px;
 .modal-content {
   margin: auto;
   display: block;
-  max-width: 80%;
-  max-height: 80%;
+
 }
 
 .close {
