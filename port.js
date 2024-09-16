@@ -256,14 +256,14 @@ window.onclick = function (event) {
 
 // Contact Page //
 
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
 
-    const form = document.querySelector('.contact-form');
-    form.addEventListener('submit', function (event) {
-        event.preventDefault();
-        
-        alert("Your message has been sent. Thank you for reaching out!");
-        form.reset(); 
-    });
+  alert("Your quote request has been sent. Thank you for reaching out!");
+  form.reset(); 
+});
+
 
 
 

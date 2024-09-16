@@ -1217,7 +1217,7 @@ a:hover p {
 }
 
 .contact-intro {
-  background-color: #282c34e8;
+  background-color: #282c34f1;
   padding: 60px 20px;
   border: 2px solid #503746;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -1226,7 +1226,7 @@ a:hover p {
 }
 
 .contact-form-section {
-  background-color: #1c1c1c;
+  background-color: #1c1c1cef;
   padding: 40px 20px;
   border: 2px solid #503746;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -1282,6 +1282,37 @@ a:hover p {
   background-color: #503746;
   transform: translateY(-3px);
 }
+
+.checkbox-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.checkbox-group label {
+  margin-right: 20px;
+  color: #e0c4a8;
+  font-size: 1.1em;
+}
+
+.contact-form select {
+  width: 100%;
+  max-width: 600px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #503746;
+  border-radius: 5px;
+  background-color: #282c34;
+  color: #d3b88c;
+}
+
+.contact-form select:focus {
+  border-color: #d3b88c;
+  outline: none;
+  box-shadow: 0 0 20px #503746;
+}
+
 
 /* Responsive styling */
 @media (max-width: 768px) {
