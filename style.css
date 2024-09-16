@@ -603,7 +603,7 @@ a:hover p {
 }
 
 .projects h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "cormorant", serif;
   font-size: 2.5em;
   margin-bottom: 50px;
   color: #d3b88c;
@@ -627,6 +627,7 @@ a:hover p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+min-height: 230px; 
 }
 
 .project-card:hover {
