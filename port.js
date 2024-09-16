@@ -1,15 +1,18 @@
 
 // Navigation Bar //
+
 document.addEventListener("DOMContentLoaded", function () {
-  const nav = document.querySelector("nav");
-  const menuToggle = document.createElement("div");
-  menuToggle.textContent = "☰";
-  menuToggle.className = "menu-toggle";
-  nav.insertBefore(menuToggle, nav.children[1]);
+  const menuToggle = document.querySelector(".menu-toggle");
+  const navMenu = document.querySelector("nav ul");
 
   menuToggle.addEventListener("click", function () {
-    const ul = document.querySelector("nav ul");
-    ul.style.display = ul.style.display === "block" ? "none" : "block";
+    navMenu.classList.toggle("active"); 
+  });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth > 768) {
+      navMenu.classList.remove("active");
+    }
   });
 });
 
