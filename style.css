@@ -1191,7 +1191,7 @@ a:hover p {
   transform: translateY(-3px);
 }
 
-/* Responsive layout for smaller screens */
+/* Mobile */
 @media (max-width: 768px) {
   .services-list {
       grid-template-columns: 1fr;
@@ -1217,7 +1217,7 @@ a:hover p {
 }
 
 .contact-intro {
-  background-color: #282c34f1;
+  background-color: #282c34;
   padding: 60px 20px;
   border: 2px solid #503746;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -1225,8 +1225,97 @@ a:hover p {
   margin-top: 100px;
 }
 
+.contact-details {
+  background-color: #1c1f24;
+  color: #d3b88c;
+  padding: 60px 20px;
+  border: 2px solid #503746;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+}
+
+.contact-details h3 {
+  font-family: 'Cormorant', serif;
+  font-size: 2.5em;
+  color: #d3b88c;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-details p {
+  font-size: 1.2em;
+  line-height: 1.8;
+  color: #e0c4a8;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-item {
+  background-color: #282c34;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  border: 2px solid #503746;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.info-item h4 {
+  font-family: 'Cormorant', serif;
+  font-size: 1.8em;
+  color: #d3b88c;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 1.1em;
+  color: #e0c4a8;
+  margin: 0;
+}
+
+.info-item a {
+  color: #d3b88c;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: #a58e7b;
+  text-decoration: underline;
+}
+
+.contact-info .info-item:hover {
+  background-color: #bba37b65;
+  box-shadow: 0 0 20px #503746, 0 0 40px #64485c;
+  transform: translateY(-5px);
+  transition: all 0.4s ease;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .info-item {
+    max-width: 100%;
+  }
+}
+
+
 .contact-form-section {
-  background-color: #1c1c1cef;
+  background-color: #21242b;
   padding: 40px 20px;
   border: 2px solid #503746;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -1234,6 +1323,7 @@ a:hover p {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .contact-form {
