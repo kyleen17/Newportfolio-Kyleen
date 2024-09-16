@@ -1,3 +1,4 @@
+
 // Navigation Bar //
 document.addEventListener("DOMContentLoaded", function () {
   const nav = document.querySelector("nav");
@@ -186,7 +187,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Web Development / Graphic Design / Digital Art //
 
-document.addEventListener("DOMContentLoaded", function () {
+
   const carousels = document.querySelectorAll(".web-dev-carousel");
 
   carousels.forEach((carousel) => {
@@ -201,7 +202,7 @@ document.addEventListener("DOMContentLoaded", function () {
       images[currentIndex].classList.add("active");
     }, 3000);
   });
-});
+
 
 // Modal functions
 let currentImageIndex = 0;
@@ -246,16 +247,16 @@ window.onclick = function (event) {
 
 // Services Page //
 
-document.addEventListener("DOMContentLoaded", function () {
+
     const contactButton = document.querySelector(".contact-button");
     contactButton.addEventListener("click", function () {
         window.location.href = "contact.html"; 
     });
-});
+
 
 // Contact Page //
 
-document.addEventListener("DOMContentLoaded", function () {
+
     const form = document.querySelector('.contact-form');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
@@ -263,5 +264,8 @@ document.addEventListener("DOMContentLoaded", function () {
         alert("Your message has been sent. Thank you for reaching out!");
         form.reset(); 
     });
-});
+
+
+
+
 
