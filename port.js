@@ -203,6 +203,11 @@ if (btn) {
     }, 3000);
   });
 
+  function goBack() {
+    window.location.href = "./projects.html"; // Redirect to the projects page
+  }
+  
+
 
 // Modal functions
 let currentImageIndex = 0;

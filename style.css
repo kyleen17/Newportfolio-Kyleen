@@ -702,6 +702,7 @@ min-height: 230px;
   line-height: 1.6;
   font-family: "cormorant", serif;
   padding-bottom: 20px;
+  font-style: italic;
 }
 
 .project-grid {
@@ -881,8 +882,9 @@ min-height: 230px;
   color: #e0c4a8;
   line-height: 1.6;
   font-family: "cormorant", serif;
-  padding: 20px; 
+  padding: 50px; 
   margin-bottom: 40px; 
+  font-style: italic;
 }
 
 .project-grid {
@@ -1000,6 +1002,9 @@ min-height: 230px;
   line-height: 1.6;
   font-family: "cormorant", serif;
   padding-bottom: 20px;
+  font-style: italic;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .project-grid {
@@ -1077,6 +1082,29 @@ min-height: 230px;
 .project-card-da .web-dev-carousel {
   height: 300px;
 }
+
+.back-button-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.back-button {
+  background-color: #64485c;
+  color: #ffffff;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.back-button:hover {
+  background-color: #503746;
+  transform: translateY(-3px);
+}
+
 
 /* // Services Page // */
 
@@ -1251,6 +1279,7 @@ min-height: 230px;
   color: #e0c4a8;
   margin-bottom: 40px;
   padding: 20px;
+  font-style: italic;
 }
 
 .contact-info {
