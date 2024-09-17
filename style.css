@@ -1255,17 +1255,17 @@ h3 {
   text-align: center;
 }
 
-.contact-details h3 {
+.contact-details h4 {
   font-family: "Cormorant", serif;
   font-size: 2.5em;
   color: #d3b88c;
   margin-bottom: 20px;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 }
 
 .contact-details p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   line-height: 1.8;
   color: #e0c4a8;
   margin-bottom: 40px;
@@ -1291,13 +1291,6 @@ h3 {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.info-item h4 {
-  font-family: "Cormorant", serif;
-  font-size: 1.8em;
-  color: #d3b88c;
-  margin-bottom: 10px;
-}
-
 .info-item p {
   font-size: 1.1em;
   color: #e0c4a8;
@@ -1313,6 +1306,15 @@ h3 {
 .info-item a:hover {
   color: #a58e7b;
   text-decoration: underline;
+}
+
+.contact-form-section h4 {
+  font-family: "Cormorant", serif;
+  font-size: 2.5em;
+  color: #d3b88c;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
 .contact-info .info-item:hover {
@@ -1375,6 +1377,7 @@ h3 {
   outline: none;
   box-shadow: 0 0 20px #503746;
 }
+ 
 
 .send-button {
   background-color: #64485c;

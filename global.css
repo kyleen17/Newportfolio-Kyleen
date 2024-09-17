@@ -13,7 +13,7 @@ nav {
     height: 85px;
   }
   
-  nav p {
+  nav h1 {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -39,7 +39,7 @@ nav {
   }
   
   @media (max-width: 768px) {
-    nav p {
+    nav h1 {
       display: none;
     }
   
