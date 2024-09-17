@@ -657,8 +657,6 @@ a:hover p {
 }
 
 
-
-
 @media (max-width: 768px) {
   .project-sections {
     flex-direction: column;
