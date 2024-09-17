@@ -113,21 +113,21 @@
 }
 
 .about button a {
-  color: white; 
-  text-decoration: none; 
+  color: white;
+  text-decoration: none;
 }
 
 .about button:visited a {
-  color: white; 
+  color: white;
 }
 
 .about button:active {
-  background-color: #503746; 
-  transform: translateY(0); 
+  background-color: #503746;
+  transform: translateY(0);
 }
 
 .about button a:visited {
-  color: white; 
+  color: white;
 }
 
 .about button:hover {
@@ -136,9 +136,8 @@
 }
 
 .about button:hover a {
-  color: white; 
+  color: white;
 }
-
 
 @media (max-width: 768px) {
   .about {
@@ -174,8 +173,6 @@
   color: #d3b88c;
 }
 
-
-
 /* Recent Works Carousel */
 .carousel {
   display: flex;
@@ -189,12 +186,12 @@
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
   position: relative;
-  display: none; 
+  display: none;
 }
 
 .carousel-item.active {
   opacity: 1;
-  display: block; 
+  display: block;
 }
 
 .carousel img {
@@ -238,7 +235,7 @@ button.next1 {
 }
 
 .highlights button a:visited {
-  color: white; 
+  color: white;
 }
 
 button:hover {
@@ -318,7 +315,7 @@ button:hover {
   background-color: #503746;
 }
 .serviceshome button a:visited {
-  color: white; 
+  color: white;
 }
 
 /* Responsive Design */
@@ -336,7 +333,7 @@ button:hover {
 
 /* // ABOUT - PAGE // */
 .about-page {
-  background: none; 
+  background: none;
   color: #d3b88c;
   padding: 80px 20px;
   text-align: center;
@@ -346,12 +343,7 @@ button:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px;
-  background-color: rgba(
-    28,
-    28,
-    28,
-    0.8
-  ); 
+  background-color: rgba(28, 28, 28, 0.8);
   border: 2px solid #503746;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -502,7 +494,7 @@ a:hover p {
 
 .resume-section h3 {
   font-size: 2em;
-  font-family: 'cormorant', serif;
+  font-family: "cormorant", serif;
 }
 
 .resume-section p {
@@ -530,14 +522,14 @@ a:hover p {
 
 /* Modal */
 .modal {
-  display: none; 
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.9); 
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 .modal-content {
@@ -589,11 +581,10 @@ a:hover p {
   background-color: #503746;
 }
 
-
 /* // Projects // */
 
 .projects {
-  background-color: #1c1c1c;
+  background-color: #1c1c1cee;
   color: #d3b88c;
   padding: 80px 20px;
   text-align: center;
@@ -619,7 +610,7 @@ a:hover p {
 }
 
 .project-card {
-  background-color: #333;
+  background-color: #333333f5;
   padding: 20px;
   border-radius: 10px;
   width: 250px;
@@ -627,7 +618,7 @@ a:hover p {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-min-height: 230px; 
+  min-height: 300px;
 }
 
 .project-card:hover {
@@ -636,9 +627,11 @@ min-height: 230px;
 }
 
 .project-card img {
-  width: 100px;
+  width: 50px;
   height: auto;
   margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
 }
 
 .project-card h3 {
@@ -662,6 +655,9 @@ min-height: 230px;
 .project-link:visited {
   color: inherit;
 }
+
+
+
 
 @media (max-width: 768px) {
   .project-sections {
@@ -797,7 +793,6 @@ min-height: 230px;
 .modal-content {
   margin: auto;
   display: block;
-
 }
 
 .close {
@@ -882,14 +877,14 @@ min-height: 230px;
   color: #e0c4a8;
   line-height: 1.6;
   font-family: "cormorant", serif;
-  padding: 50px; 
-  margin-bottom: 40px; 
+  padding: 50px;
+  margin-bottom: 40px;
   font-style: italic;
 }
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   justify-items: center;
   margin: 2%;
@@ -972,7 +967,6 @@ min-height: 230px;
     gap: 20px;
   }
 }
-
 
 /* // Digital Art // */
 
@@ -1105,7 +1099,6 @@ min-height: 230px;
   transform: translateY(-3px);
 }
 
-
 /* // Services Page // */
 
 .services-intro {
@@ -1120,7 +1113,7 @@ min-height: 230px;
 }
 
 .services-intro h2 {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 2.5em;
   margin-bottom: 30px;
   color: #d3b88c;
@@ -1190,8 +1183,8 @@ min-height: 230px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
 }
 
-.full-package h2 { 
-  font-family: 'Cormorant', serif;
+.full-package h2 {
+  font-family: "Cormorant", serif;
   font-size: 2.5em;
   margin-bottom: 30px;
   color: #d3b88c;
@@ -1222,15 +1215,15 @@ min-height: 230px;
 /* Mobile */
 @media (max-width: 768px) {
   .services-list {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
 /* // Contact Page // */
 
-
-.contact-intro h2, h3 {
-  font-family: 'Cormorant', serif;
+.contact-intro h2,
+h3 {
+  font-family: "Cormorant", serif;
   color: #d3b88c;
   text-transform: uppercase;
   letter-spacing: 1.5px;
@@ -1265,7 +1258,7 @@ min-height: 230px;
 }
 
 .contact-details h3 {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 2.5em;
   color: #d3b88c;
   margin-bottom: 20px;
@@ -1301,7 +1294,7 @@ min-height: 230px;
 }
 
 .info-item h4 {
-  font-family: 'Cormorant', serif;
+  font-family: "Cormorant", serif;
   font-size: 1.8em;
   color: #d3b88c;
   margin-bottom: 10px;
@@ -1342,7 +1335,6 @@ min-height: 230px;
   }
 }
 
-
 .contact-form-section {
   background-color: #21242b;
   padding: 40px 20px;
@@ -1367,7 +1359,7 @@ min-height: 230px;
   margin-bottom: 10px;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form textarea {
   width: 100%;
   max-width: 600px;
@@ -1379,7 +1371,7 @@ min-height: 230px;
   color: #d3b88c;
 }
 
-.contact-form input:focus, 
+.contact-form input:focus,
 .contact-form textarea:focus {
   border-color: #d3b88c;
   outline: none;
@@ -1432,13 +1424,10 @@ min-height: 230px;
   box-shadow: 0 0 20px #503746;
 }
 
-
 /* Responsive styling */
 @media (max-width: 768px) {
-  .contact-form input, 
+  .contact-form input,
   .contact-form textarea {
-      max-width: 100%;
+    max-width: 100%;
   }
 }
-
-
