@@ -234,9 +234,19 @@ button.next1 {
   border-radius: 5px;
 }
 
+.highlights button a {
+  color: white;
+  text-decoration: none;
+}
+
 .highlights button a:visited {
   color: white;
 }
+
+.view-all button a:visited {
+  color: white;
+}
+
 
 button:hover {
   background-color: #503746;
@@ -303,8 +313,8 @@ button:hover {
   background-color: #64485c;
   color: #ffffff;
   border: none;
-  padding: 10px 20px;
-  font-size: 1em;
+  padding: 20px 20px;
+  font-size: 1.1em;
   border-radius: 5px;
   margin-top: 30px;
   cursor: pointer;
@@ -385,10 +395,10 @@ button:hover {
 button {
   background-color: #64485c;
   color: white;
-  padding: 12px 30px;
+  padding: 20px 30px;
   border: none;
   border-radius: 5px;
-  font-size: 1.1em;
+  font-size: 1.2em;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
