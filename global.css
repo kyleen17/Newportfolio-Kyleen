@@ -290,50 +290,9 @@ footer {
   .footer-info a:hover {
     text-decoration: underline;
   }
+
   
-  .geometric-shapes {
-    position: absolute;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 20px;
-  }
-  
-  .shape {
-    width: 40px;
-    height: 40px;
-    background-color: #d3b88c;
-    animation: changeShape 5s infinite ease-in-out;
-  }
-  
-  .circle {
-    border-radius: 50%;
-  }
-  
-  .square {
-    background-color: #503746;
-  }
-  
-  .triangle {
-    width: 0;
-    height: 0;
-    border-left: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-bottom: 50px solid #64485c;
-  }
-  
-  @keyframes changeShape {
-    0%,
-    100% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-      background-color: #64485c;
-    }
-  }
-  
+
   .footer-bottom {
     margin-top: 40px;
     font-size: 16px;
