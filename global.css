@@ -38,7 +38,11 @@ nav {
     color: #ece5ba;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 768px){
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
     nav h1 {
       display: none;
     }
@@ -96,7 +100,6 @@ nav {
     border: 2px solid #503746;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    margin-left: 20px;
   }
   
   .audio-player button {
@@ -180,7 +183,7 @@ nav {
   }
   
   
-  /* Basic styles for particles */
+  /* Particles */
   .particle {
     position: absolute;
     width: 6px;
@@ -198,12 +201,113 @@ nav {
       opacity: 0;
     }
   }
+
+  /* // header // */
+
+.theme-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  margin: 20px;
+  font-family: "Cormorant Garamond", serif;
+  color: #d3b88c;
+  border: 2px solid #503746; 
+  border-radius: 10px; 
+  background-color: #1c1c1c; 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 0, 0, 0.5); 
+  transition: background-color 0.4s, border-color 0.4s;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 60px;
+  height: 34px;
+  margin: 0 10px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ece5ba; 
+  transition: 0.4s;
+  border-radius: 34px;
+  box-shadow: 0 0 15px #d3b88c, 0 0 30px #64485c; /
+}
+
+.toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked ~ .toggle-slider {
+  background-color: #64485c; 
+  box-shadow: 0 0 15px #503746, 0 0 30px #d3b88c; 
+}
+
+input:checked + .toggle-label .toggle-slider:before {
+  transform: translateX(26px);
+}
+
+.toggle-label-text {
+  font-size: 1.2em;
+  color: #d3b88c;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.4s;
+}
+
+/* Light and Dark side text colors */
+.light-side-text {
   
+  color: #64485c; 
+  font-weight: 600;
+}
+
+.dark-side-text {
+    color: #ece5ba;
+  
+  font-weight: 600;
+}
+
+input:checked ~ .dark-side-text {
+  color: #64485c; 
+}
+
+input:not(:checked) ~ .light-side-text {
+  color: #d3b88c; 
+}
+
+input:checked ~ .light-side-text {
+  color: #64485c; 
+}
+
+input:not(:checked) ~ .dark-side-text {
+  color: #ece5ba; 
+}
+
 
   /* // body // */
 
   body {
-    font-family: corm;
+    font-family: "cormorant garamond", serif;
     margin: 0;
     padding: 0;
     background: #f4f4f4;

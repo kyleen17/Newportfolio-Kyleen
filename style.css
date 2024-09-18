@@ -46,7 +46,7 @@
 /* //About Section// */
 
 .about {
-  background-color: #1c1f24;
+  background-color: #1c1f24; 
   color: #d3b88c;
   padding: 80px 20px;
   display: flex;
@@ -58,6 +58,13 @@
   border: 2px solid #503746;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
   position: relative;
+  transition: background-color 0.4s, color 0.4s, border-color 0.4s; 
+}
+
+.about.light-mode {
+  background-color: #f4f4f4; 
+  color: #1c1f24; 
+  border-color: #d3b88c; 
 }
 
 .about img {
@@ -155,6 +162,11 @@
   }
 }
 
+.about.light-mode {
+  background-color: #ffffff;
+  color: #333; 
+}
+
 /* // recent works // */
 
 .highlights {
@@ -171,6 +183,11 @@
 .highlights h5 {
   font-size: 2em;
   color: #d3b88c;
+}
+
+.highlights.light-mode {
+  background-color: #f9f9f9; 
+  color: #333;
 }
 
 /* Recent Works Carousel */
@@ -252,6 +269,19 @@ button:hover {
   background-color: #503746;
 }
 
+@media (max-width: 768px) {
+  .highlights {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    width: 90%;
+    color: #000;
+  }
+}
+
 /* //Services Section // */
 
 .serviceshome {
@@ -328,7 +358,6 @@ button:hover {
   color: white;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .service-list {
     flex-direction: column;
@@ -398,7 +427,7 @@ button {
   padding: 20px 30px;
   border: none;
   border-radius: 5px;
-  font-size: 1.2em;
+  font-size: 1.1em;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
@@ -668,8 +697,14 @@ a:hover p {
 
 
 @media (max-width: 768px) {
+  .projects {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 80px 5px;
+  }
   .project-sections {
     flex-direction: column;
+    align-items: center;
   }
 
   .project-card {
