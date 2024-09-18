@@ -46,7 +46,7 @@
 /* //About Section// */
 
 .about {
-  background-color: #1c1f24; 
+  background-color: #1c1f24f5; 
   color: #d3b88c;
   padding: 80px 20px;
   display: flex;
@@ -99,7 +99,7 @@
 }
 
 .about-text p {
-  font-size: 1.1em;
+  font-size: 1.2em;
   line-height: 1.8;
   max-width: 600px;
   color: #e0c4a8;
@@ -172,7 +172,8 @@
 .highlights {
   text-align: center;
   color: #fff;
-  background-color: #282c34;
+  font-weight: 600;
+  background-color: #282c34ef;
   padding: 20px;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -271,14 +272,24 @@ button:hover {
 
 @media (max-width: 768px) {
   .highlights {
-    margin-top: 50px;
     margin-bottom: 50px;
+    min-height: auto;
   }
 
   .description {
     font-size: 1.1rem;
     width: 90%;
     color: #000;
+    font-weight: 600;
+    padding: 70px 20px;
+  }
+
+  .carousel img {
+    width: 100%;
+  }
+  .carousel-item p {
+    font-size: 1.1rem;
+    height: 0%;
   }
 }
 
@@ -296,7 +307,7 @@ button:hover {
 }
 
 .serviceshome h5 {
-  font-size: 2.5em;
+  font-size: 2.6rem;
   color: #d3b88c;
   margin-bottom: 30px;
 }
@@ -307,6 +318,7 @@ button:hover {
   justify-content: center;
   gap: 20px;
 }
+
 
 .service-item {
   background-color: #333;
@@ -329,12 +341,12 @@ button:hover {
 }
 
 .service-item h6 {
-  font-size: 1.5em;
+  font-size: 2em;
   margin-bottom: 10px;
 }
 
 .service-item p {
-  font-size: 1em;
+  font-size: 1.6em;
   line-height: 1.5;
   margin-bottom: 10px;
 }
@@ -382,7 +394,7 @@ button:hover {
   max-width: 900px;
   margin: 0 auto;
   padding: 40px;
-  background-color: rgba(28, 28, 28, 0.8);
+  background-color: rgba(28, 28, 28, 0.863);
   border: 2px solid #503746;
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -432,6 +444,9 @@ button {
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
   margin-top: 20px;
+  display: inline-block; 
+  width: auto;
+  text-align: center; 
 }
 
 button:hover {
@@ -444,7 +459,7 @@ button a:visited {
 }
 
 .social-links {
-  background-color: rgba(28, 28, 28, 0.8);
+  background-color: rgba(28, 28, 28, 0.959);
   color: #d3b88c;
   padding: 60px 20px;
   text-align: center;
@@ -521,7 +536,7 @@ a:hover p {
 
 /* Resume Section */
 .resume-section {
-  background-color: #1c1f24;
+  background-color: #1c1f24f1;
   color: #d3b88c;
   text-align: center;
   padding: 50px 20px;
@@ -1145,7 +1160,7 @@ a:hover p {
 /* // Services Page // */
 
 .services-intro {
-  background-color: #282c34ea;
+  background-color: #282c34f8;
   padding: 60px 20px;
   margin-bottom: 50px;
   border: 2px solid #503746;
@@ -1274,14 +1289,14 @@ h3 {
 }
 
 .contact-intro p {
-  font-size: 1.2em;
+  font-size: 1.3em;
   color: #e0c4a8;
   line-height: 1.6;
   text-align: center;
 }
 
 .contact-intro {
-  background-color: #282c34;
+  background-color: #282c34f5;
   padding: 60px 20px;
   border: 2px solid #503746;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.8);
@@ -1337,7 +1352,6 @@ h3 {
 }
 
 .info-item p {
-  font-size: 1.1em;
   color: #e0c4a8;
   margin: 0;
 }

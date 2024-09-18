@@ -14,7 +14,7 @@ nav {
   }
   
   nav h1 {
-    font-size: 20px;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 0;
     padding: 0;
@@ -29,6 +29,7 @@ nav {
   
   li {
     margin-left: 20px;
+    font-size: 1.2rem;
   }
   
   .menu-toggle {
@@ -383,7 +384,7 @@ footer {
   
   footer p {
     margin: 5px 0;
-    font-size: 18px;
+    font-size: 1.2rem;
   }
   
   .footer-info a {
@@ -396,7 +397,6 @@ footer {
   }
 
   
-
   .footer-bottom {
     margin-top: 40px;
     font-size: 16px;
@@ -418,7 +418,4 @@ footer {
       width: 100px;
     }
   
-    .geometric-shapes {
-      bottom: -20px;
-    }
   }     
