@@ -17,25 +17,55 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Random Image Background //
-
-const backgrounds = [
+const darkBackgrounds = [
   "./images/pexels-shotbyrain-3010291.jpg",
   "./images/pexels-blooddrainer-1655901.jpg",
   "./images/pexels-daniel-maldonado-1864828-4119179.jpg",
   "./images/pexels-francesco-ungaro-1671325.jpg",
   "./images/pexels-vincent-ma-janssen-2302802.jpg",
-  "./images/pexels-pixabay-206676.jpg",
   "./images/pexels-eva-bronzini-6072090.jpg",
   "./images/kyfant2.jpg",
 ];
 
-const randomIndex = Math.floor(Math.random() * backgrounds.length);
-const selectedBackground = backgrounds[randomIndex];
+const lightBackgrounds = [
+  "./images/light-backgrounds/pexels-pixabay-206676.jpg",
+  "./images/light-backgrounds/light1.jpg",
+  "./images/light-backgrounds/angel-8397145_1280.jpg",
+  "./images/light-backgrounds/light2.jpg",
+  "./images/light-backgrounds/light3.jpg",
+  "./images/light-backgrounds/angel-8397145_1280.jpg",
+];
 
-document.body.style.backgroundImage = `url('${selectedBackground}')`;
-document.body.style.backgroundAttachment = "fixed";
-document.body.style.backgroundPosition = "center";
-document.body.style.backgroundRepeat = "no-repeat";
+function setRandomBackground(backgrounds) {
+  const randomIndex = Math.floor(Math.random() * backgrounds.length);
+  const selectedBackground = backgrounds[randomIndex];
+  document.body.style.backgroundImage = `url('${selectedBackground}')`;
+}
+
+function toggleMode(isLightMode) {
+  if (isLightMode) { 
+    console.log("Toggle mode: light");
+    setRandomBackground(lightBackgrounds);
+    localStorage.setItem('theme', 'light');
+    document.body.style.backgroundColor = "#f4f4f4";  
+    document.querySelector(".theme-toggle-container").style.borderColor = "#d3b88c"; 
+    
+
+    document.querySelector('.about').classList.add('light-mode');
+  } else { 
+    console.log("Toggle mode: dark");
+    setRandomBackground(darkBackgrounds);
+    localStorage.setItem('theme', 'dark');
+    document.body.style.backgroundColor = "#1c1c1c"; 
+    document.querySelector(".theme-toggle-container").style.borderColor = "#64485c"; 
+    
+
+    document.querySelector('.about').classList.remove('light-mode');
+  }
+}
+
+
+
 
 // Home Page //
 
@@ -160,6 +190,8 @@ function createParticle(x, y) {
   }, 600);
 }
 
+// Toggle Dark and Light  Side // 
+
 // About Page //
 
 const modal = document.getElementById("resumeModal");
@@ -181,6 +213,44 @@ if (btn) {
         }
     };
 }
+
+function toggleMode(isLightMode) {
+  if (isLightMode) {
+    console.log("Toggle mode: light");
+    setRandomBackground(lightBackgrounds);
+    localStorage.setItem('theme', 'light');
+
+    document.body.classList.add('light-mode');
+    document.body.classList.remove('dark-mode'); 
+  } else {
+    console.log("Toggle mode: dark");
+    setRandomBackground(darkBackgrounds);
+    localStorage.setItem('theme', 'dark');
+
+    document.body.classList.remove('light-mode'); 
+    document.body.classList.add('dark-mode');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const storedTheme = localStorage.getItem('theme');
+  const toggleSwitch = document.getElementById("toggle");
+
+  if (storedTheme === 'light') {
+    toggleSwitch.checked = true; 
+    setRandomBackground(lightBackgrounds);
+    document.body.classList.add('light-mode');
+  } else {
+    toggleSwitch.checked = false; 
+    setRandomBackground(darkBackgrounds);
+    document.body.classList.add('dark-mode'); 
+  }
+
+  toggleSwitch.addEventListener("change", function () {
+    toggleMode(this.checked);
+  });
+});
+
 
 
 // Project Page //
