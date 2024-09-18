@@ -25,6 +25,7 @@ const darkBackgrounds = [
   "./images/pexels-vincent-ma-janssen-2302802.jpg",
   "./images/pexels-eva-bronzini-6072090.jpg",
   "./images/kyfant2.jpg",
+  "./images/dark.png",
 ];
 
 const lightBackgrounds = [
@@ -34,6 +35,10 @@ const lightBackgrounds = [
   "./images/light-backgrounds/light2.jpg",
   "./images/light-backgrounds/light3.jpg",
   "./images/light-backgrounds/angel-8397145_1280.jpg",
+  "./images/light-backgrounds/light.jpg",
+  "./images/light-backgrounds/pexels-stephane-hurbe-1267753-4065578.jpg",
+  "./images/light-backgrounds/wolf-2826741_1280.jpg",
+
 ];
 
 function setRandomBackground(backgrounds) {
