@@ -1,3 +1,5 @@
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=110&section=header" width="100%">
+
 # Kyleen Simon-Robertson's Portfolio Website
 
 Welcome to my portfolio website! This site showcases my work as a **Web Developer**, **Graphic Designer**, and **Illustrator**. Here, you can explore my projects, skills, and my journey in the creative field.
