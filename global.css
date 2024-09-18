@@ -322,6 +322,10 @@ input:not(:checked) ~ .dark-side-text {
     font-style: normal;
   }
 
+  .about button:visited a {
+    color: white;
+  }
+
 
 
   /* // footer // */

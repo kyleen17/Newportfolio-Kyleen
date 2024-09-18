@@ -119,6 +119,11 @@
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
 }
 
+button {
+  width: 100%;
+  padding: 20px;
+}
+
 .about button a {
   color: white;
   text-decoration: none;
@@ -133,9 +138,6 @@
   transform: translateY(0);
 }
 
-.about button a:visited {
-  color: white;
-}
 
 .about button:hover {
   background-color: #503746;
