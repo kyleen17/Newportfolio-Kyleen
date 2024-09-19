@@ -43,6 +43,15 @@
   color: #d3b88c;
 }
 
+/* //Hero Section Light Mode */
+
+.light-mode .hero {
+  background-color: #616161; 
+  color: #ffffff; 
+  border-color: #d3b88c; 
+}
+
+
 /* //About Section// */
 
 .about {
@@ -164,11 +173,21 @@ button {
   }
 }
 
-.about.light-mode {
-  background-color: #ffffff;
-  color: #333; 
+
+/* //About Section Light Mode */
+
+.light-mode .about {
+  background-color: #dfd8c4;
+  color: #333;
 }
 
+.light-mode .about h3 {
+  color: #503746;
+}
+
+.light-mode .about p {
+  color: #503746;
+}
 /* // recent works // */
 
 .highlights {
@@ -295,6 +314,21 @@ button:hover {
   }
 }
 
+/* // Recent Works Light Mode */
+
+.light-mode .highlights {
+  background-color: #dfd8c4;
+  color: #333;
+}
+
+.light-mode .highlights h5 {
+  color: #503746;
+}
+
+.light-mode .highlights p {
+  color: #503746;
+}
+
 /* //Services Section // */
 
 .serviceshome {
@@ -383,6 +417,19 @@ button:hover {
     max-width: 300px;
   }
 }
+
+/* // Services Section Light Mode // */
+
+.light-mode .serviceshome {
+  background-color: #dfd8c4;
+  color: #333;
+}
+
+.light-mode .serviceshome h5 {
+  color: #503746;
+}
+
+
 
 /* // ABOUT - PAGE // */
 .about-page {

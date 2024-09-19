@@ -56,6 +56,7 @@ function toggleMode(isLightMode) {
     document.querySelector(".theme-toggle-container").style.borderColor = "#d3b88c"; 
     
 
+    document.querySelector('nav').classList.add('light-mode');
     document.querySelector('.about').classList.add('light-mode');
   } else { 
     console.log("Toggle mode: dark");
@@ -64,12 +65,11 @@ function toggleMode(isLightMode) {
     document.body.style.backgroundColor = "#1c1c1c"; 
     document.querySelector(".theme-toggle-container").style.borderColor = "#64485c"; 
     
-
+  
+    document.querySelector('nav').classList.remove('light-mode');
     document.querySelector('.about').classList.remove('light-mode');
   }
 }
-
-
 
 
 // Home Page //
