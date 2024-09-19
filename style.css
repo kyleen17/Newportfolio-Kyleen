@@ -684,6 +684,49 @@ a:hover p {
   background-color: #503746;
 }
 
+/* Light Side About Page */
+
+.light-mode .about-container {
+  background-color: #dfd8c4d5;
+  color: #333;
+}
+
+.light-mode .about-container h2 {
+  color: #503746;
+}
+
+.light-mode .about-container p {
+  color: #503746;
+}
+
+.light-mode .about-img {
+  border: 4px solid #503746;
+
+}
+
+.light-mode .social-links  {
+  color: #503746;
+  background-color: #dfd8c4d5;
+}
+.light-mode .social-links h3 {
+  color: #503746;
+}
+
+.light-mode .resume-section {
+  background-color: #dfd8c4d5;
+  color: #503746;
+}
+
+.light-mode .resume-section h3 {
+  color: #503746;
+}
+
+.light-mode .resume-section p {
+  color: #503746;
+  font-weight: 500;
+}
+
+
 /* // Projects // */
 
 .projects {
