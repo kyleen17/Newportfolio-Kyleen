@@ -52,22 +52,27 @@ function toggleMode(isLightMode) {
     console.log("Toggle mode: light");
     setRandomBackground(lightBackgrounds);
     localStorage.setItem('theme', 'light');
+
     document.body.style.backgroundColor = "#f4f4f4";  
     document.querySelector(".theme-toggle-container").style.borderColor = "#d3b88c"; 
-    
 
-    document.querySelector('nav').classList.add('light-mode');
-    document.querySelector('.about').classList.add('light-mode');
+    
+    document.querySelectorAll('.dark-text').forEach(element => {
+      element.textContent = element.getAttribute('data-light-text');
+    });
+
   } else { 
     console.log("Toggle mode: dark");
     setRandomBackground(darkBackgrounds);
     localStorage.setItem('theme', 'dark');
+
     document.body.style.backgroundColor = "#1c1c1c"; 
     document.querySelector(".theme-toggle-container").style.borderColor = "#64485c"; 
-    
-  
-    document.querySelector('nav').classList.remove('light-mode');
-    document.querySelector('.about').classList.remove('light-mode');
+
+   
+    document.querySelectorAll('.dark-text').forEach(element => {
+      element.textContent = element.getAttribute('data-dark-text');
+    });
   }
 }
 
