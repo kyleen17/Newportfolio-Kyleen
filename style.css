@@ -820,6 +820,18 @@ a:hover p {
   }
 }
 
+/* Projects Light Mode */
+
+.light-mode .projects {
+  background-color: #dfd8c4;
+  color: #333;
+  border: 2px solid #503746;
+}
+
+.light-mode .projects h2 {
+  color: #503746;
+}
+
 /* //WebDevelopment// */
 
 .web-dev-portfolio {
@@ -1000,6 +1012,36 @@ a:hover p {
   }
 }
 
+/* Web Development - Light Side */
+
+.light-mode .web-dev-portfolio {
+  background-color: #d3b88cb4;
+  color: #1c1c1ce0;
+  box-shadow: #1c1f24 0 0 20px;
+}
+
+.light-mode .web-dev-portfolio h2 {
+  color: #503746;
+}
+
+.light-mode .web-dev-portfolio p {
+  color: #64485ce0;
+  font-weight: 600;
+}
+
+.light-mode .web-dev-portfolio h3  {
+  color: #503746;
+}
+
+.light-mode .web-dev-portfolio h3 a {
+  color: #503746;
+}
+
+.light-mode .project-card-wd {  
+  background-color: #af9c7ce0;
+  color: #1c1c1ce0;
+  box-shadow: #1c1f24 0 0 20px;
+}
 /* //Graphic Design // */
 
 .graph-design-portfolio {
@@ -1118,6 +1160,36 @@ a:hover p {
   }
 }
 
+/* Graphic Design - Light Side */
+
+.light-mode .graph-design-portfolio {
+  background-color: #af9c7ce0;
+  color: #1c1c1ce0;
+  box-shadow: #1c1f24 0 0 20px;
+}
+
+.light-mode .graph-design-portfolio h2 {
+  color: #503746;
+}
+
+.light-mode .graph-design-portfolio h3  {
+  color: #503746;
+}
+
+.light-mode .graph-design-portfolio h3 a {
+  color: #503746;
+}
+
+.light-mode .graph-design-portfolio p {
+  color: #503746;
+  font-weight: 600;
+}
+
+.light-mode .project-card-gd {
+  background-color: #af9c7ce0;
+  color: #333;
+  border: 2px solid #503746;
+}
 /* // Digital Art // */
 
 .digital-art-portfolio {
@@ -1249,6 +1321,28 @@ a:hover p {
   transform: translateY(-3px);
 }
 
+/*  Digital Art - Light Side */
+
+.light-mode .digital-art-portfolio {
+  background-color: #af9c7ce0;
+  color: #333;
+  border: 2px solid #503746;
+}
+
+.light-mode .project-card-da {
+  background-color: #af9c7ce0;
+  color: #333;
+  border: 2px solid #503746;
+}
+
+.light-mode .project-card-da h3  {
+  color: #503746;
+}
+
+.light-mode .project-card-da p {
+  color: #503746;
+}
+
 /* // Services Page // */
 
 .services-intro {
@@ -1368,6 +1462,58 @@ a:hover p {
     grid-template-columns: 1fr;
   }
 }
+
+/*  Services - Light Mode */
+
+.light-mode .services-intro {
+  background-color: #af9c7ce0;
+  color: #333;
+  border: 2px solid #503746;
+}
+
+.light-mode .services-intro h2 {
+  color: #503746;
+  font-weight: 600;
+}
+
+.light-mode .services-intro p {
+  color: #503746;
+  font-weight: 600;
+}
+
+.light-mode .service-item {
+  background-color: #af9c7cee;
+  color: #333;
+  border: 2px solid #503746;
+}
+
+.light-mode .service-item h3 {
+  color: #503746;
+}
+
+.light-mode .service-item p {
+  color: #503746;
+}
+
+.light-mode .service-item .price {
+  color: #503746;
+  font-weight: 600;
+}
+
+.light-mode .full-package .price {
+  color: #503746;
+  font-weight: 600;
+}
+
+.light-mode .full-package {
+  background-color: #af9c7c;
+  color: #333;
+  border: 2px solid #503746;
+}
+
+.light-mode .full-package h2 {
+  color: #503746;
+} 
 
 /* // Contact Page // */
 
@@ -1582,4 +1728,54 @@ h3 {
   .contact-form textarea {
     max-width: 100%;
   }
+}
+
+/* Contact Page - Light Mode */
+
+.light-mode .contact-intro {
+  background-color: #af9c7ce8;
+  color: #333;
+}
+
+.light-mode .contact-intro h2 {
+  color: #503746;
+}
+
+.light-mode .contact-intro p {
+  color: #503746;
+  font-weight: 600;
+}
+
+.light-mode .contact-details {
+  background-color: #af9c7ccb;
+  color: #333;
+}
+
+.light-mode .contact-details p {
+  color: #503746;
+  font-weight: 600;
+}
+
+.light-mode .info-item {
+  background-color: #af9c7ce0;
+  color: #333;
+  border: 2px solid #503746;
+}
+
+.light-mode .info-item h3 {
+  color: #503746;
+  font-weight: 700;
+}
+
+.light-mode .info-item p {
+  color: #503746;
+}
+
+.light-mode .info-item p a {
+  color: #503746;  
+}
+
+.light-mode .contact-form-section {
+  background-color: #685d53e8;
+  color: #333;
 }
