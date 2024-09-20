@@ -770,6 +770,9 @@ a:hover p {
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.7);
+
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #d3b88c, 0 0 30px #503746;
 }
 
 .project-card img {
