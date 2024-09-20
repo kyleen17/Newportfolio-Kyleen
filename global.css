@@ -1,3 +1,28 @@
+/* Loading Screen */
+
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: #d3b88c; /* Gold color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it appears above all content */
+    transition: opacity 0.5s ease;
+}
+
+.portal {
+    text-align: center;
+    /* You can add styles for the glowing effect here */
+    text-shadow: 0 0 20px #d3b88c, 0 0 40px #64485c;
+    font-size: 1.5em;
+}
+
+
 /* Navigation Bar */
 nav {
     background: #282c34;
@@ -182,7 +207,7 @@ nav {
     .audio-player-text {
       font-size: 0.9em;
       margin-bottom: 5px;
-        
+
     }
   }
 
