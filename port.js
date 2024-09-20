@@ -48,6 +48,9 @@ function setRandomBackground(backgrounds) {
 }
 
 function toggleMode(isLightMode) {
+  const logodark = document.getElementById("logodark");
+  const logolight = document.getElementById("logolight");
+
   if (isLightMode) { 
     console.log("Toggle mode: light");
     setRandomBackground(lightBackgrounds);
@@ -56,7 +59,9 @@ function toggleMode(isLightMode) {
     document.body.style.backgroundColor = "#f4f4f4";  
     document.querySelector(".theme-toggle-container").style.borderColor = "#d3b88c"; 
 
-    
+    logodark.style.display = "none"; 
+    logolight.style.display = "block"; 
+
     document.querySelectorAll('.dark-text').forEach(element => {
       element.textContent = element.getAttribute('data-light-text');
     });
@@ -69,12 +74,39 @@ function toggleMode(isLightMode) {
     document.body.style.backgroundColor = "#1c1c1c"; 
     document.querySelector(".theme-toggle-container").style.borderColor = "#64485c"; 
 
-   
+    logodark.style.display = "block"; 
+    logolight.style.display = "none"; 
+
     document.querySelectorAll('.dark-text').forEach(element => {
       element.textContent = element.getAttribute('data-dark-text');
     });
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const storedTheme = localStorage.getItem('theme');
+  const toggleSwitch = document.getElementById("toggle");
+  const logodark = document.getElementById("logodark");
+  const logolight = document.getElementById("logolight");
+
+  if (storedTheme === 'light') {
+    toggleSwitch.checked = true; 
+    setRandomBackground(lightBackgrounds);
+    document.body.style.backgroundColor = "#f4f4f4"; 
+    logodark.style.display = "none"; 
+    logolight.style.display = "block"; 
+  } else {
+    toggleSwitch.checked = false; 
+    setRandomBackground(darkBackgrounds);
+    document.body.style.backgroundColor = "#1c1c1c"; 
+    logodark.style.display = "block"; 
+    logolight.style.display = "none";
+  }
+
+  toggleSwitch.addEventListener("change", function () {
+    toggleMode(this.checked);
+  });
+});
 
 
 // Home Page //
