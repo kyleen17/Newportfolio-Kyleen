@@ -15,6 +15,30 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+  const links = document.querySelectorAll('nav ul li a');
+  const sound = document.getElementById('click-sound');
+  const loadingScreen = document.getElementById('loading-screen');
+  
+  
+  links.forEach(link => {
+      link.addEventListener('click', function(event) {
+          event.preventDefault(); // Prevent default link behavior
+          const targetUrl = this.href; // Store the target URL
+  
+          sound.currentTime = 0; // Reset sound to the start
+          sound.play(); // Play the sound
+  
+          // Show the loading screen
+          loadingScreen.style.display = 'flex';
+  
+          // Navigate to the new page after a delay
+          setTimeout(() => {
+              window.location.href = targetUrl; // Navigate to the new URL
+          }, 2500); // Adjust the delay as needed
+      });
+  });
+  
+
 
 // Random Image Background //
 const darkBackgrounds = [
