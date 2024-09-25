@@ -22,22 +22,38 @@ document.addEventListener("DOMContentLoaded", function () {
   
   links.forEach(link => {
       link.addEventListener('click', function(event) {
-          event.preventDefault(); // Prevent default link behavior
-          const targetUrl = this.href; // Store the target URL
+          event.preventDefault(); 
+          const targetUrl = this.href; 
   
-          sound.currentTime = 0; // Reset sound to the start
-          sound.play(); // Play the sound
+          sound.currentTime = 0; 
+          sound.play();
   
-          // Show the loading screen
+      
           loadingScreen.style.display = 'flex';
   
-          // Navigate to the new page after a delay
+       
           setTimeout(() => {
-              window.location.href = targetUrl; // Navigate to the new URL
-          }, 2500); // Adjust the delay as needed
+              window.location.href = targetUrl; 
+          }, 2500);
       });
   });
   
+
+  const toggle = document.getElementById('toggle');
+const logo = document.getElementById('logo');
+
+toggle.addEventListener('change', function() {
+    if (this.checked) {
+        // Light Mode
+        document.body.classList.add('light-mode');
+        logo.src = './images/fullLogolightmode.png'; // Change this to your light mode logo
+    } else {
+        // Dark Mode
+        document.body.classList.remove('light-mode');
+        logo.src = './images/Manidoologo.png'; // Change this back to your dark mode logo
+    }
+});
+
 
 
 // Random Image Background //
