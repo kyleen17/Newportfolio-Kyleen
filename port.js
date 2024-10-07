@@ -40,19 +40,23 @@ document.addEventListener("DOMContentLoaded", function () {
   
 
   const toggle = document.getElementById('toggle');
-const logo = document.getElementById('logo');
-
-toggle.addEventListener('change', function() {
-    if (this.checked) {
-        // Light Mode
-        document.body.classList.add('light-mode');
-        logo.src = './images/fullLogolightmode.png'; // Change this to your light mode logo
-    } else {
-        // Dark Mode
-        document.body.classList.remove('light-mode');
-        logo.src = './images/Manidoologo.png'; // Change this back to your dark mode logo
-    }
-});
+  const logo = document.getElementById('logo');
+  const footerLogo = document.getElementById('footer-logo'); // Get the footer logo
+  
+  toggle.addEventListener('change', function() {
+      if (this.checked) {
+          // Light Mode
+          document.body.classList.add('light-mode');
+          logo.src = './images/fullLogolightmode.png'; // Change the nav logo
+          footerLogo.src = './images/logoshortlightmode.png'; // Change the footer logo
+      } else {
+          // Dark Mode
+          document.body.classList.remove('light-mode');
+          logo.src = './images/Manidoologo.png'; // Change the nav logo
+          footerLogo.src = './images/shortmanidoologo.png'; // Change the footer logo
+      }
+  });
+  
 
 
 
