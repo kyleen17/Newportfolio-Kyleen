@@ -943,6 +943,13 @@ a:hover p {
   justify-content: space-between;
 }
 
+.project-card-wd .h3 .ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  color: #d3b88c;
+}
+
 .project-card-wd .web-dev-carousel {
   height: 300px;
 }
